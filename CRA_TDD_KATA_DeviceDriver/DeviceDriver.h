@@ -14,7 +14,6 @@ public:
     int read(long address);
     void write(long address, int data);
 
-
     class ReadFailException : public exception {
 	    public:
 	        explicit ReadFailException(char const* _Message) : exception(_Message) {}
