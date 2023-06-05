@@ -1,1 +1,1 @@
-# Device Driver KATA (오진환)
+# Device Driver KATA
