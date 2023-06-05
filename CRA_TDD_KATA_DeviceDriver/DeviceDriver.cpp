@@ -19,6 +19,6 @@ int DeviceDriver::read(long address)
 
 void DeviceDriver::write(long address, int data)
 {
-    // TODO: implement this method
+    if (DeviceDriver::read(address) != ERASE_DATA) throw WriteFailException("Write Fail");
     m_hardware->write(address, (unsigned char)data);
 }
